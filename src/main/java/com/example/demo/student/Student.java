@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 @Setter
 @EqualsAndHashCode
 @NoArgsConstructor
-//@AllArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table
 public class Student {
@@ -38,12 +38,6 @@ public class Student {
     private Gender gender;
 
     public Student(String name, String email, Gender gender) {
-        this.name = name;
-        this.email = email;
-        this.gender = gender;
-    }
-    public Student(Long id, String name, String email, Gender gender) {
-        this.id = id;
         this.name = name;
         this.email = email;
         this.gender = gender;
